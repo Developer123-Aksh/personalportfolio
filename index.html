@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aksh Modi | AI/ML Researcher & Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Aksh Modi is an AI/ML Researcher & Full-Stack Developer specializing in Machine Learning, Python, TensorFlow, Flutter, and scalable intelligent systems. Published researcher with real-world projects.">
+  <meta name="keywords"
+    content="Aksh Modi, AI ML Researcher, Machine Learning Developer, Full Stack Developer, Python Developer, TensorFlow, PyTorch, Flutter Developer, Research Papers, AI Engineer">
+  <meta name="author" content="Aksh Modi">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Aksh Modi | AI/ML Researcher & Developer">
+  <meta property="og:description"
+    content="Aksh Modi is an AI/ML Researcher & Full-Stack Developer specializing in Machine Learning, Python, TensorFlow, Flutter, and scalable intelligent systems. Published researcher with real-world projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://akshmodi.com">
+  <meta property="og:image" content="https://akshmodi.com/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aksh Modi",
+    "url": "https://akshmodi.com",
+    "jobTitle": "AI/ML Researcher & Full-Stack Developer",
+    "sameAs": [
+      "https://www.linkedin.com/in/aksh-modi-ab9489208/"
+    ],
+    "knowsAbout": [
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Flutter",
+      "Full Stack Development"
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0a0a;
+      color: #e8e8e8;
+      overflow-x: hidden;
+      width: 100%;
+    }
+
+    p {
+      line-height: 1.75;
+      letter-spacing: 0.2px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2.2rem;
+      border-bottom: 2px solid #228b22;
+      padding-bottom: 0.6rem;
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    a {
+      color: #228b22;
+      text-decoration: none;
+    }
+
+    /* ================= ABOUT NAME HIGHLIGHT ================= */
+    .about-name {
+      color: #228b22;
+      font-weight: 700;
+      position: relative;
+      padding: 0 4px;
+    }
+
+    /* subtle underline glow */
+    .about-name::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 3px;
+
+      border-radius: 2px;
+    }
+
+    /* selection stays clean */
+    .about-name::selection {
+      background: #228b22;
+      color: #000;
+    }
+
+    /* ================= ABOUT SECTION ================= */
+    .about-section {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about-intro {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+      margin-bottom: 1.8rem;
+      line-height: 1.7;
+    }
+
+    /* Two-column text */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      color: #b0b0b0;
+      line-height: 1.7;
+    }
+
+    /* Mobile friendly */
+    @media (max-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* ================= MOUSE INTERACTIVE CANVAS ================= */
+    header {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+
+    /* ================= HERO BACKGROUND ANIMATION ================= */
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .hero-bg span {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(34, 139, 34, 0.25), transparent 70%);
+      animation: floatBg 20s linear infinite;
+      filter: blur(40px);
+      opacity: 0.6;
+    }
+
+    /* Individual positions & speeds */
+    .hero-bg span:nth-child(1) {
+      top: 10%;
+      left: 15%;
+      animation-duration: 22s;
+    }
+
+    .hero-bg span:nth-child(2) {
+      top: 60%;
+      left: 10%;
+      animation-duration: 28s;
+    }
+
+    .hero-bg span:nth-child(3) {
+      top: 30%;
+      left: 70%;
+      animation-duration: 26s;
+    }
+
+    .hero-bg span:nth-child(4) {
+      top: 70%;
+      left: 65%;
+      animation-duration: 32s;
+    }
+
+    /* Floating motion */
+    @keyframes floatBg {
+      0% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-120px) translateX(60px) scale(1.1);
+      }
+
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
+    }
+
+    /* Ensure hero content stays above */
+    header {
+      position: relative;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ================= BACKGROUND ================= */
+    .bg-pattern {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(34, 139, 34, .04), transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(34, 139, 34, .04), transparent 50%),
+        #0a0a0a;
+    }
+
+    /* ================= HERO ================= */
+    header {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(34, 139, 34, .25);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* ================= MOBILE GLOBAL FIXES ================= */
+    @media (max-width: 1024px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 3rem 1.5rem;
+      }
+
+      section {
+        padding: 2.5rem 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 15px;
+      }
+
+      .container {
+        padding: 2rem 1rem;
+      }
+
+      section {
+        padding: 2rem 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      header {
+        min-height: 70vh;
+        padding: 5rem 2rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        min-height: 60vh;
+        padding: 4rem 1rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        padding: 0 1rem;
+      }
+
+      .hero-subtitle {
+        display: inline-block;
+        margin-top: 0.5rem;
+        word-break: break-word;
+      }
+
+      .hero-cta {
+        gap: 1rem;
+      }
+
+      .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-stats {
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .stat-number {
+        font-size: 1.8rem;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+      }
+    }
+
+
+
+    /* CTA */
+
+    .cta-primary {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-primary::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent);
+      transform: translateX(-100%);
+    }
+
+    .cta-primary:hover::after {
+      animation: shine 0.8s ease;
+    }
+
+    @keyframes shine {
+      to {
+        transform: translateX(100%);
+      }
+    }
+
+    .hero-cta {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .cta-button {
+      padding: 1rem 2.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: .3s;
+      border: 2px solid #228b22;
+    }
+
+    .cta-primary {
+      background: #228b22;
+      color: #fff;
+    }
+
+    .cta-secondary {
+      background: transparent;
+      color: #228b22;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 25px rgba(34, 139, 34, .5);
+    }
+
+    /* Stats */
+    .hero-stats {
+      margin-top: 3rem;
+      display: flex;
+      gap: 3rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .stat-number {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #228b22;
+    }
+
+    .stat-label {
+      color: #888;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: rgba(25, 25, 25, 0.9);
+      padding: 2rem;
+      border-radius: 14px;
+      border: 1px solid rgba(34, 139, 34, 0.25);
+      transition: 0.4s ease;
+      position: relative;
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      background: linear-gradient(120deg,
+          transparent,
+          rgba(34, 139, 34, 0.08),
+          transparent);
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .project-card:hover::before {
+      opacity: 1;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(34, 139, 34, 0.3);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.8rem;
+      color: #e8e8e8;
+    }
+
+    .project-card p {
+      color: #b0b0b0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .project-tags {
+      margin-top: 1.2rem;
+    }
+
+    .project-tags span {
+      display: inline-block;
+      margin: 0.4rem 0.4rem 0 0;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.8rem;
+      border-radius: 6px;
+      background: rgba(34, 139, 34, 0.15);
+      color: #cfead0;
+    }
+
+
+    /* ================= NAV ================= */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 15, 15, .95);
+      backdrop-filter: blur(12px);
+      padding: 1rem;
+      width: 100%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+
+    nav a {
+      color: #c0c0c0;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: #228b22;
+      transition: .3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+
+      nav ul {
+        gap: 1.3rem;
+      }
+
+      nav a {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ================= SECTIONS ================= */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    section {
+      background: rgba(18, 18, 18, .75);
+      padding: 3.5rem;
+      margin-bottom: 3rem;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    h2 {
+      border-bottom: 2px solid #228b22;
+      display: inline-block;
+      padding-bottom: .5rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+
+      .grid {
+        gap: 1.4rem;
+      }
+
+      .card {
+        padding: 1.6rem;
+      }
+
+      .project-card {
+        padding: 1.6rem;
+      }
+
+      .project-card h3 {
+        font-size: 1.05rem;
+      }
+
+      .project-card p {
+        font-size: 0.9rem;
+      }
+    }
+
+
+
+    /* ================= RESEARCH & CERTIFICATIONS ================= */
+    .research-section {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .research-paper {
+      padding: 1.8rem;
+      background: rgba(25, 25, 25, 0.9);
+      border-radius: 12px;
+      border-left: 4px solid #228b22;
+    }
+
+    .publisher {
+      font-size: 0.9rem;
+      color: #228b22;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .research-paper h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: #e8e8e8;
+    }
+
+    .research-paper p {
+      color: #b0b0b0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    /* Certifications */
+    .certifications {
+      margin-top: 3rem;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .cert-card {
+      padding: 1.6rem;
+      background: rgba(25, 25, 25, 0.9);
+      border-radius: 12px;
+      border: 1px solid rgba(34, 139, 34, 0.25);
+      transition: 0.3s ease;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(34, 139, 34, 0.25);
+    }
+
+    .company {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 0.4rem;
+    }
+
+    .cert-card h3 {
+      font-size: 1rem;
+      color: #e8e8e8;
+    }
+
+
+    @media (max-width: 1024px) {
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .research-paper {
+        padding: 1.5rem;
+      }
+
+      .research-paper h3 {
+        font-size: 1rem;
+      }
+
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cert-card {
+        padding: 1.4rem;
+      }
+    }
+
+
+    /* Cards */
+
+    .about-section,
+    .research-section {
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    .card {
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(34, 139, 34, 0.25);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    .reveal.active {
+      animation: revealUp 1s ease forwards;
+    }
+
+    @keyframes revealUp {
+      from {
+        opacity: 0;
+        transform: translateY(60px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card {
+      background: rgba(25, 25, 25, .9);
+      padding: 2rem;
+      border-radius: 12px;
+      transition: .3s;
+      border: 1px solid transparent;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #b5b5b5;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(34, 139, 34, .4);
+    }
+
+    /* Grids */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      margin: .4rem .3rem 0 0;
+      background: rgba(34, 139, 34, .15);
+      padding: .4rem .8rem;
+      border-radius: 6px;
+      font-size: .85rem;
+    }
+
+    /* Contact */
+    .contact-card a {
+      display: inline-block;
+      margin-top: .5rem;
+    }
+
+    nav a {
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-2px);
+    }
+
+
+    /* ================= STICKY NAV NAME ================= */
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .nav-name {
+      position: absolute;
+      left: 1.5rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #ffffff;
+      opacity: 0;
+      transform: translateY(-8px);
+      transition: 0.4s ease;
+      pointer-events: none;
+    }
+
+    /* When scrolled */
+    nav.scrolled .nav-name {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Keep menu centered */
+
+    /* Mobile fix */
+    @media (max-width: 768px) {
+      .nav-name {
+        display: none;
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem;
+      border-top: 1px solid rgba(34, 139, 34, .25);
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+
+      footer {
+        font-size: 0.85rem;
+        padding: 2rem 1rem;
+      }
+
+      .contact-card a {
+        font-size: 0.9rem;
+      }
+    }
+
+
+
+    /* Selection */
+    ::selection {
+      background: #228b22;
+      color: #000;
+    }
+
+    .highlight::selection {
+      background: #228b22;
+      color: #000;
+    }
+
+
+    /* ================= HAMBURGER MENU ================= */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1100;
+      /* Ensure it stays above the full-screen menu */
+    }
+
+    .hamburger span {
+      width: 26px;
+      height: 3px;
+      background: #228b22;
+      border-radius: 3px;
+      transition: 0.4s ease;
+    }
+
+    /* ================= MOBILE NAV ================= */
+    @media (max-width: 768px) {
+      nav {
+        backdrop-filter: none;
+        /* Fix containing block issue for fixed children */
+      }
+
+      nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 1000;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .hamburger {
+        display: none;
+      }
+    }
+
+
+    /* ================= HAMBURGER ANIMATION ================= */
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+
+
+    /* ================= TABLET ================= */
+    @media (min-width: 769px) and (max-width: 1024px) {
+
+      /* Grid adjustments for tablet */
+      .grid,
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      #about .about-intro {
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Prevent background scroll when nav open */
+    body.menu-open {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-pattern"></div>
+
+  <!-- HERO -->
+  <header>
+
+    <div class="hero-content">
+      <h1>Aksh Modi</h1>
+      <p style="max-width: 100%; margin: 0 auto;">
+        <span class="highlight" id="typing-text"></span><br />
+        <span class="hero-subtitle">Python • TensorFlow • PyTorch • Full-Stack Developer</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="cta-button cta-primary">View My Work</a>
+        <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-number" data-count="2">0</div>
+          <div class="stat-label">Research Papers</div>
+        </div>
+        <div>
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div>
+          <div class="stat-number" data-count="10">0</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-name">Aksh Modi</div>
+
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal about-section">
+      <h2>About Me</h2>
+
+      <p class="about-intro">
+        I’m <span class="about-name">Aksh Modi</span>, an AI/ML
+        <strong>research-driven developer</strong> focused on building
+        intelligent, scalable systems.
+      </p>
+
+      <div class="about-grid">
+        <p>
+          I work across <strong>AI, web, and mobile platforms</strong>,
+          combining machine learning with real-world applications such as
+          health analytics, fitness systems, and AI-driven assistants.
+        </p>
+
+        <p>
+          I’ve published <strong>two research papers</strong> in a Springer
+          Conference and an International Journal, and I enjoy transforming
+          research ideas into <strong>production-ready software</strong>.
+        </p>
+      </div>
+
+      <!-- WHY ME -->
+      <div style="
+      margin-top: 2.5rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid #228b22;
+    ">
+        <p class="about-intro">
+          <strong>Why me?</strong><br><br>
+          I approach development as a <strong>problem-solving discipline</strong>,
+          not just a coding task. With a strong foundation in
+          <strong>AI/ML research and full-stack engineering</strong>, I design
+          systems that are data-driven, scalable, and grounded in real-world
+          use cases. Publishing research has trained me to think critically
+          about accuracy, evaluation, and long-term impact — skills I carry
+          into every product I build. The result is software that doesn’t
+          just work, but works <strong>intelligently</strong>.
+        </p>
+      </div>
+    </section> <br> <br>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>AI / ML</h3><br>
+          <p>Supervised & Unsupervised Learning, Regression & Classification,
+            Feature Engineering, Model Evaluation (Accuracy, Precision, Recall),
+            Hyperparameter Tuning, Scikit-learn Pipelines</p>
+        </div>
+        <div class="card">
+          <h3>Backend & APIs</h3><br>
+          <p>RESTful API Design, Node.js, Express, PHP, JSP & Servlets,
+            Authentication, Role-Based Access Control</p>
+        </div>
+        <div class="card">
+          <h3>Mobile Development</h3><br>
+          <p>Flutter, Android (Java),
+            Responsive UI, State Management, API Integration</p>
+        </div>
+        <div class="card">
+          <h3>Databases & Data Handling</h3><br>
+          <p>SQL, MySQL, MongoDB, Schema Design, Indexing,
+            Data Validation, CRUD Optimization</p>
+        </div>
+        <div class="card">
+          <h3>Tools, DevOps & Research</h3><br>
+          <p>Git, Version Control, Docker (Basics),
+            Model Experimentation, Research Writing,
+            Data Analysis, System Documentation</p>
+        </div>
+        <div class="card">
+          <h3>Research</h3><br>
+          <p>2 Published Research Papers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Nutrition & Fitness App</h3><br>
+          <p>IoT-integrated fitness & nutrition tracking platform.</p><br>
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">IoT</span>
+        </div>
+
+        <div class="card">
+          <h3>Nutrition AI Chatbot</h3><br>
+          <p>AI-based conversational nutrition assistant.</p><br>
+          <span class="tech-tag">Gemini API</span>
+          <span class="tech-tag">NLP</span>
+          <span class="tech-tag">AI/ML</span>
+        </div>
+
+        <div class="card">
+          <h3>Medical Shop Android App</h3><br>
+          <p>Inventory, billing & customer management system.</p><br>
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Android</span>
+          <span class="tech-tag">SQL</span>
+        </div>
+
+        <div class="project-card">
+          <h3>Bike Rental Management System</h3>
+          <p>
+            Full-stack web application for bike booking, pricing,
+            role-based access (Admin, Owner, Customer), and payments.
+          </p>
+          <div class="project-tags">
+            <span>JSP</span>
+            <span>Servlet</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>AI-Based Weight Recommendation Engine</h3>
+          <p>
+            Machine learning model that recommends calorie intake
+            and diet plans based on user goals and metabolic data.
+          </p>
+          <div class="project-tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>Scikit-learn</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH & CERTIFICATIONS -->
+    <section id="research" class="reveal">
+      <h2>Research & Certifications</h2>
+
+      <!-- Research Publications -->
+      <div class="research-section">
+        <div class="research-paper">
+          <div class="publisher">IJEM – International Journal</div>
+          <h3>
+            Comprehensive Review on BMI, TDEE, BMR, and Calories for Weight Management
+          </h3>
+          <p>
+            A detailed review analyzing the relationship between Body Mass Index,
+            Total Daily Energy Expenditure, Basal Metabolic Rate, and caloric intake
+            to support sustainable and long-term weight management.
+          </p>
+        </div>
+
+        <div class="research-paper">
+          <div class="publisher">Springer Conference</div>
+          <h3>
+            A Comprehensive Framework for Weight Management Using Personalized
+            Health Data
+          </h3>
+          <p>
+            This research proposes a holistic framework integrating macro- and
+            micronutrient data with behavioral insights to enhance personalized
+            weight management outcomes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifications">
+        <h2>Certifications</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="company">JP Morgan Chase & Co.</div>
+            <h3>Quantitative Research Job Simulation</h3>
+          </div>
+
+          <div class="cert-card">
+            <div class="company">JP Morgan Chase & Co.</div>
+            <h3>Software Developer Job Simulation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <h2>Get In Touch</h2>
+      <div class="grid">
+        <div class="card contact-card">
+          <h3>Email</h3>
+          <a href="mailto:modiaksh343@gmail.com">modiaksh343@gmail.com</a>
+        </div>
+        <div class="card contact-card">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/aksh-modi-ab9489208/" target="_blank">Connect</a>
+        </div>
+        <div class="card contact-card">
+          <h3>Phone</h3>
+          <a href="tel:+919104611390">+91 9104611390</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2024 Aksh Modi
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+
+  <script>
+    let scene = new THREE.Scene();
+    let camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+
+    let renderer = new THREE.WebGLRenderer({ alpha: true });
+    renderer.setSize(window.innerWidth, document.querySelector("header").offsetHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.domElement.style.position = "absolute";
+    renderer.domElement.style.top = "0";
+    renderer.domElement.style.left = "0";
+    renderer.domElement.style.zIndex = "0";
+    document.querySelector("header").appendChild(renderer.domElement);
+
+    camera.position.z = 5;
+
+    /* Particles */
+    const geometry = new THREE.BufferGeometry();
+    const count = window.innerWidth < 768 ? 600 : 1500;
+    const positions = new Float32Array(count * 3);
+
+    for (let i = 0; i < count * 3; i++) {
+      positions[i] = (Math.random() - 0.5) * 10;
+    }
+
+    geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+
+    const material = new THREE.PointsMaterial({
+      color: 0x228b22,
+      size: window.innerWidth < 768 ? 0.015 : 0.02,
+      transparent: true,
+      opacity: 0.8
+    });
+
+    const points = new THREE.Points(geometry, material);
+    scene.add(points);
+
+    /* Mouse interaction */
+    window.addEventListener("mousemove", e => {
+      points.rotation.y = (e.clientX / window.innerWidth - 0.5) * 0.6;
+      points.rotation.x = (e.clientY / window.innerHeight - 0.5) * 0.6;
+    });
+
+    /* Animate */
+    function animate() {
+      requestAnimationFrame(animate);
+      points.rotation.z += 0.0008;
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    /* Resize */
+    window.addEventListener("resize", () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, document.querySelector("header").offsetHeight);
+    });
+
+
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 120) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+    const counters = document.querySelectorAll('.stat-number');
+    let started = false;
+
+    window.addEventListener('scroll', () => {
+      if (!started && window.scrollY > 200) {
+        counters.forEach(counter => {
+          const target = +counter.dataset.count;
+          let count = 0;
+          const speed = 80;
+
+          const update = () => {
+            if (count < target) {
+              count++;
+              counter.innerText = count;
+              setTimeout(update, speed);
+            } else {
+              counter.innerText = target + "+";
+            }
+          };
+          update();
+        });
+        started = true;
+      }
+    });
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.onclick = e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      };
+    });
+
+
+
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector("nav ul");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+      document.body.classList.toggle("menu-open");
+    });
+
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
+      });
+    });
+
+
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      reveals.forEach(r => {
+        if (r.getBoundingClientRect().top < window.innerHeight - 100)
+          r.classList.add("active");
+      });
+    });
+
+    const text = "AI/ML Researcher & Developer";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(i++);
+        setTimeout(type, 80);
+      }
+    }
+    window.onload = type;
+  </script>
+
+</body>
+
+</html>

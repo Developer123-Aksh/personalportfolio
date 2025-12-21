@@ -1045,7 +1045,7 @@
       <h1>Aksh Modi</h1>
       <p style="max-width: 100%; margin: 0 auto;">
         <span class="highlight" id="typing-text"></span><br />
-        <span class="hero-subtitle">AI/ML Researcher | Full-Stack Engineer | Intelligent Systems Builder</span>
+        <span class="hero-subtitle">Python • TensorFlow • PyTorch • Full-Stack Developer</span>
       </p>
 
       <div class="hero-cta">
@@ -1071,11 +1071,11 @@
   </header>
 
   <!-- NAV -->
-  <nav id="navbar">
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
     <div class="nav-inner">
       <div class="nav-name">Aksh Modi</div>
 
-      <ul>
+      <ul id="primary-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -1083,7 +1083,8 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="primary-menu" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
@@ -1095,8 +1096,8 @@
   <div class="container">
 
     <!-- ABOUT -->
-    <section id="about" class="reveal about-section">
-      <h2>About Me</h2>
+    <section id="about" class="reveal about-section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
 
       <p class="about-intro">
         I’m <span class="about-name">Aksh Modi</span>, an AI/ML
@@ -1139,8 +1140,8 @@
     </section> <br> <br>
 
     <!-- SKILLS -->
-    <section id="skills" class="reveal">
-      <h2>Skills</h2>
+    <section id="skills" class="reveal" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
       <div class="grid">
         <div class="card">
           <h3>AI / ML</h3><br>
@@ -1177,8 +1178,8 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="reveal">
-      <h2>Projects</h2>
+    <section id="projects" class="reveal" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
       <div class="grid">
         <div class="card">
           <h3>Nutrition & Fitness App</h3><br>
@@ -1233,10 +1234,9 @@
 
       </div>
     </section>
-
     <!-- RESEARCH & CERTIFICATIONS -->
-    <section id="research" class="reveal">
-      <h2>Research & Certifications</h2>
+    <section id="research" class="reveal" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research & Certifications</h2>
 
       <!-- ================= RESEARCH PUBLICATIONS ================= -->
       <div class="research-section">
@@ -1354,9 +1354,8 @@
   </section>
 
   <!-- CONTACT -->
-  <!-- CONTACT -->
-  <section id="contact" class="reveal">
-    <h2>Get In Touch</h2>
+  <section id="contact" class="reveal" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Get In Touch</h2>
 
     <div class="grid">
 
@@ -1408,7 +1407,7 @@
   </section>
   </div>
 
-  <footer>
+  <footer role="contentinfo">
     <div class="footer-content">
 
       <p class="footer-text">
@@ -1556,6 +1555,12 @@
       });
     });
 
+    hamburger.addEventListener("click", () => {
+      const expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", !expanded);
+    });
+
+
     const text = "AI/ML Researcher & Developer";
     let i = 0;
     function type() {
@@ -1571,6 +1576,7 @@
 
 
 </html>
+
 
 
 

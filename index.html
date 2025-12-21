@@ -991,6 +991,47 @@
     body.menu-open {
       overflow: hidden;
     }
+
+    /* ================= CONTACT ICONS ================= */
+.contact-card {
+  text-align: center;
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  background: rgba(34, 139, 34, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s ease;
+}
+
+.contact-icon svg {
+  width: 26px;
+  height: 26px;
+  fill: #228b22;
+}
+
+.contact-card:hover .contact-icon {
+  background: rgba(34, 139, 34, 0.35);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 20px rgba(34, 139, 34, 0.45);
+}
+
+/* ================= FOOTER HEART ================= */
+.heart {
+  display: inline-block;
+  animation: heartbeat 1.6s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+    
   </style>
 </head>
 
@@ -1421,6 +1462,7 @@
 
 
 </html>
+
 
 
 
